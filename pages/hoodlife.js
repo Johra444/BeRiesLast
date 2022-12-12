@@ -3,7 +3,6 @@ import Head from "next/head";
 import styles from "../styles/Hoodlife.module.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import Image from "next/image";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useAccount, useBalance } from "wagmi";

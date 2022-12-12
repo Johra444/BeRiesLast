@@ -28,16 +28,18 @@
   padding-right: 100px;
 }
 .tee{
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   height: auto;
 }
 .hlclogo{
-  width: 600px;
+  width: 80%;
   height: auto;
 }
 .hlcCharacter{
-  width: auto;
-  height: 440PX;
+  width: 85%;
+  max-width: 440px;
+  height: auto;
   
 }
 .burnContainer1 {
@@ -240,7 +242,8 @@
   .blueContainer{
     height: 700px;
     flex-direction: column;
-    padding-top: 70px;
+    padding: 0 20px;
+    text-align: center;
   }
   .whiteContainer{
     flex-direction: column;
