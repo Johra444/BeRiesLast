@@ -190,7 +190,7 @@ const Hoodlife = () => {
               <img className={styles.tee} src="/assets/tee.png"  />  
           </div>
           <div className={styles.ContainerLeft}>
-              <img className={styles.hlclogo} src="/assets/hlclogo.png"  />
+              <img className={styles.hlclogo} src="/assets/HLClogo.png"  />
                 <button className={styles.mintButton} onClick={handleBurn}>
                   Mint
                 </button>
