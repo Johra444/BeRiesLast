@@ -679,3 +679,7 @@ export const BERIES_CONTRACT_ABI = [
 
 export const BERIES_CONTRACT_ADDRESS =
   "0xb44af677E490d79623974110679Ef7847Cd5ed0d";
+
+export const HLC_CONTRACT_ADDRESS = "";
+
+export const HLC_CONTRACT_ABI = [ ];
