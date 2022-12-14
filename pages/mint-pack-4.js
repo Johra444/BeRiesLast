@@ -83,13 +83,14 @@ const MintPack4 = (props) => {
 
   return (
     <>
+      <Navbar></Navbar>
+
       <div className="mint-pack4-container">
         <Head>
           <title>Mint-pack-4 - BeRies</title>
           <meta property="og:title" content="Mint-pack-4 - BeRies" />
           <meta property="og:image" />
         </Head>
-        <Navbar rootClassName="navbar-root-class-name"></Navbar>
 
         <main id="mint pack 4 container" className="mint-pack4-container1">
           <div className="mint-pack4-container2">

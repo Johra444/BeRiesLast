@@ -169,13 +169,13 @@ const Hoodlife = () => {
 
   return (
     <>
+      <Navbar></Navbar>
+
       <div className={styles.burnContainer}>
         <Head>
           <title>Burn - BeRies</title>
           <meta property="og:title" content="Burn - BeRies" />
-        </Head>
-        <Navbar rootClassName="navbar-root-class-name4"></Navbar>
-       
+        </Head>       
 
         {isConnected ? (
           <div className={styles.div}>
