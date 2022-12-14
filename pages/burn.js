@@ -134,7 +134,7 @@ const Burn = () => {
         city: state.city,
         info: state.info,
         burned: burnedBalance,
-      });
+      }, { merge: true });
       console.log("Document written with ID: ", address);
       setSubmitButton(true);
     } catch (e) {
@@ -251,6 +251,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>Email</h1>
                     <input
                       placeholder="anon@beries.com"
+                      required
                       className={styles.input}
                       value={state.email}
                       onChange={(e) =>
@@ -266,6 +267,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>State/Prov/Region</h1>
                     <input
                       placeholder="Ile-de-France"
+                      required
                       className={styles.input}
                       value={state.region}
                       onChange={(e) =>
@@ -284,6 +286,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>Name</h1>
                     <input
                       placeholder="Onze Gmi"
+                      required
                       className={styles.input}
                       value={state.name}
                       onChange={(e) =>
@@ -299,6 +302,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>Postal/Zip</h1>
                     <input
                       placeholder="75007"
+                      required
                       className={styles.input}
                       value={state.zip}
                       onChange={(e) =>
@@ -317,6 +321,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>Street</h1>
                     <input
                       placeholder="5 av. Anatole France"
+                      required
                       className={styles.input}
                       value={state.street}
                       onChange={(e) =>
@@ -332,6 +337,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>Country</h1>
                     <input
                       placeholder="France"
+                      required
                       className={styles.input}
                       value={state.country}
                       onChange={(e) =>
@@ -349,6 +355,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>City</h1>
                     <input
                       placeholder="Paris"
+                      required
                       className={styles.input}
                       value={state.city}
                       onChange={(e) =>
@@ -364,6 +371,7 @@ const Burn = () => {
                     <h1 className={styles.inputTitle}>Additional info</h1>
                     <input
                       placeholder="anon@beries.com"
+                      required
                       className={styles.input}
                       value={state.info}
                       onChange={(e) =>

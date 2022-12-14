@@ -9,8 +9,11 @@ import { useAccount, useBalance } from "wagmi";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { doc, setDoc, getDoc } from "firebase/firestore";
-import { BERIES_CONTRACT_ABI, BERIES_CONTRACT_ADDRESS } from "../constants";
+import { HLC_CONTRACT_ABI, HLC_CONTRACT_ADDRESS } from "../constants";
 import { ethers } from "ethers";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { utils } from "ethers";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDbeEo8D_EAnkLqdhz9FVbWxCYqMzUMnNI",
@@ -78,6 +81,47 @@ const Hoodlife = () => {
     }
   };
 
+  const mintFunction = async (amount) => {
+    try {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+    const contract = new ethers.Contract(
+      HLC_CONTRACT_ADDRESS,
+      HLC_CONTRACT_ABI,
+      signer
+      );
+      const value = 0.0003 * amount;
+      const Mint = await contract.Mint(amount, {
+        value: utils.parseEther(value.toString()),
+      });
+      await Mint.wait();
+        console.log("Minted");
+      //  getMinted();
+        toast.success('Minted !', {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+    } catch (error) {
+      toast.error('Something went wrong', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+        console.log(error);
+    }
+}
+
   const burn = async () => {
     try {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -97,23 +141,6 @@ const Hoodlife = () => {
     } catch (error) {
       console.log(error);
     }
-  };
-
-  const handleInput1 = (e) => {
-    const valeur = Number(e.target.value);
-    setWannaBurn([valeur, wannaBurn[1], wannaBurn[2], wannaBurn[3]]);
-  };
-  const handleInput2 = (e) => {
-    const valeur = Number(e.target.value);
-    setWannaBurn([wannaBurn[0], valeur, wannaBurn[2], wannaBurn[3]]);
-  };
-  const handleInput3 = (e) => {
-    const valeur = Number(e.target.value);
-    setWannaBurn([wannaBurn[0], wannaBurn[1], valeur, wannaBurn[3]]);
-  };
-  const handleInput4 = (e) => {
-    const valeur = Number(e.target.value);
-    setWannaBurn([wannaBurn[0], wannaBurn[1], wannaBurn[2], valeur]);
   };
 
   const handleBurn = async () => {
@@ -167,6 +194,10 @@ const Hoodlife = () => {
     doubleBalance();
   }, [isConnected]);
 
+  const handleMint = () => {
+    mintFunction(1);
+  };
+
   return (
     <>
       <Navbar></Navbar>
@@ -175,8 +206,14 @@ const Hoodlife = () => {
         <Head>
           <title>Burn - BeRies</title>
           <meta property="og:title" content="Burn - BeRies" />
+<<<<<<< Updated upstream
         </Head>       
 
+=======
+        </Head>
+        <Navbar rootClassName="navbar-root-class-name4"></Navbar>
+       
+>>>>>>> Stashed changes
         {isConnected ? (
           <div className={styles.div}>
         <section id="Title" className={styles.burnContainer1}>
@@ -191,7 +228,7 @@ const Hoodlife = () => {
           </div>
           <div className={styles.ContainerLeft}>
               <img className={styles.hlclogo} src="/assets/HLClogo.png"  />
-                <button className={styles.mintButton} onClick={handleBurn}>
+                <button className={styles.mintButton} onClick={handleMint}>
                   Mint
                 </button>
                 <span className={styles.paragraph}>
@@ -336,6 +373,7 @@ const Hoodlife = () => {
                     <h1 className={styles.inputTitle}>Additional info</h1>
                     <input
                       placeholder="anon@beries.com"
+                      required 
                       className={styles.input}
                       value={state.info}
                       onChange={(e) =>
@@ -373,6 +411,19 @@ const Hoodlife = () => {
       </div>
         )}
         <Footer rootClassName="footer-root-class-name4"></Footer>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          limit={1}
+          />
       </div>
     </>
   );

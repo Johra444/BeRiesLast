@@ -78,6 +78,7 @@ const MintPack1 = (props) => {
   useEffect(() => {
     getMinted();
   }, [isConnected]);
+  
   return (
     <>
       <Navbar></Navbar>
