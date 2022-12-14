@@ -206,14 +206,8 @@ const Hoodlife = () => {
         <Head>
           <title>Burn - BeRies</title>
           <meta property="og:title" content="Burn - BeRies" />
-<<<<<<< Updated upstream
         </Head>       
 
-=======
-        </Head>
-        <Navbar rootClassName="navbar-root-class-name4"></Navbar>
-       
->>>>>>> Stashed changes
         {isConnected ? (
           <div className={styles.div}>
         <section id="Title" className={styles.burnContainer1}>
