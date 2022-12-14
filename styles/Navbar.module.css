@@ -80,6 +80,8 @@
     width: var(--dl-size-size-xsmall);
     height: var(--dl-size-size-xsmall);
   }
+
+  
   @media (max-width: 991px) {
     .navbarHeader {
       padding-left: var(--dl-space-space-threeunits);

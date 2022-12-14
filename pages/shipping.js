@@ -7,12 +7,13 @@ import Footer from "../components/footer";
 const Shipping = (props) => {
   return (
     <>
+      <Navbar></Navbar>
+
       <div className="shipping-container">
         <Head>
           <title>Shipping - BeRies</title>
           <meta property="og:title" content="Shipping - BeRies" />
         </Head>
-        <Navbar rootClassName="navbar-root-class-name2"></Navbar>
         <form
           id="shpping-form"
           name="shipping-form"

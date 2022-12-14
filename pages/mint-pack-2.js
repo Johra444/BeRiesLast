@@ -82,13 +82,14 @@ const MintPack2 = (props) => {
 
   return (
     <>
+      <Navbar></Navbar>
+
       <div className="mint-pack2-container">
         <Head>
           <title>Mint-pack-2 - BeRies</title>
           <meta property="og:title" content="Mint-pack-2 - BeRies" />
           <meta property="og:image" />
         </Head>
-        <Navbar rootClassName="navbar-root-class-name"></Navbar>
 
         <main id="mint pack 2 container" className="mint-pack2-container1">
           <div className="mint-pack2-container2">

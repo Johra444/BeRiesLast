@@ -82,13 +82,14 @@ const MintPack3 = (props) => {
 
   return (
     <>
+      <Navbar></Navbar>
+
       <div className="mint-pack3-container">
         <Head>
           <title>Mint-pack-3 - BeRies</title>
           <meta property="og:title" content="Mint-pack-3 - BeRies" />
           <meta property="og:image" />
         </Head>
-        <Navbar rootClassName="navbar-root-class-name"></Navbar>
 
         <main id="mint pack 3 container" className="mint-pack3-container1">
           <div className="mint-pack3-container2">
@@ -129,7 +130,7 @@ const MintPack3 = (props) => {
           id="item-of-this-pack"
           className="mint-pack3-item-of-this-pack"
         >
-          <h1 className="mint-pack3-text2 H1">Item of this pack</h1>
+          <h2 id="white" className="h2">Item of this pack</h2>
           <div className="mint-pack3-container4">
             <div className="mint-pack3-container5">
               <img
