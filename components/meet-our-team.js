@@ -87,14 +87,7 @@ const MeetOurTeam = () => {
         </div>
 
         <div className={styles.team_member}>
-          <img
-            src= "./assets/team/Kahili.png"
-            className={styles.image}
-          />
-          <div className={styles.content}>
-            <span className={styles.name}>@Kahili_S</span>
-            <span className={styles.role}>Muse</span>
-          </div>
+
         </div>
         
       </div>

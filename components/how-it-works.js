@@ -1,28 +1,26 @@
 import React from "react";
 
-import PropTypes from "prop-types";
-
-const HowItWorks = (props) => {
+const HowItWorks = () => {
   return (
     <>
       <section id="how it works" className="how-it-works-how-it-works">
-        <h2 className="h2">{props.heading}</h2>
+        <h2 className="h2">How it works ?</h2>
         <div className="how-it-works-steps-container">
           <div className="how-it-works-step-1">
             <div className="how-it-works-container">
               <div className="how-it-works-container1">
                 <img
-                  src={props.image_src}
+                  src="./assets/1.svg"
                   className="how-it-works-image"
                 />
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3>{props.heading1}</h3>
+              <h3>Mint</h3>
               <span id="black" className="text">
                 <span>
-                  1Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs
-                  perspicabilis hanc
+                Choose the pack of clothes you want, then mint the NFT corresponding to the pack. 
+                You can burn them to order your clothes or you can keep them to burn later (tomorrow or in a few years, if you believe in us.) 
                 </span>
                 <br></br>
               </span>
@@ -32,17 +30,17 @@ const HowItWorks = (props) => {
             <div className="how-it-works-container">
               <div className="how-it-works-container1">
                 <img
-                  src={props.image_src1}
-                  className="how-it-works-image1"
+                  src="./assets/2.svg"
+                  className="how-it-works-image"
                 />
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3>{props.heading2}</h3>
+              <h3>Burn</h3>
               <span id="black" className="text">
                 <span>
-                  2Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs
-                  perspicabilis hanc
+                In order for us to send you your clothes, you need to burn your NFT (as proof of order) to be able to fill in the form for shipping information. 
+
                 </span>
                 <br></br>
               </span>
@@ -52,22 +50,23 @@ const HowItWorks = (props) => {
             <div className="how-it-works-container">
               <div className="how-it-works-container1">
                 <img
-                  src={props.image_src2}
-                  className="how-it-works-image2"
+                  src="./assets/3.svg"
+                  className="how-it-works-image"
                 />
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3>{props.heading3}</h3>
+              <h3>Shipping</h3>
               <span id="black" className="text">
                 <span>
-                  3Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs
-                  perspicabilis hanc
+                Once the form is filled in, the team will prepare and send your order with love. Some little surprises will be included in the packages.
+
                 </span>
                 <br></br>
               </span>
             </div>
           </div>
+          
         </div>
       </section>
       <style jsx>
@@ -93,11 +92,13 @@ const HowItWorks = (props) => {
             padding-left: 0px;
             padding-right: 0px;
             flex-direction: row;
+            gap: 10px;
           }
           .how-it-works-step-1 {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            width: 33%
           }
           .how-it-works-container {
             flex: 0 0 auto;
@@ -124,6 +125,7 @@ const HowItWorks = (props) => {
           .how-it-works-container2 {
             display: flex;
             flex-direction: column;
+            width: 
 
           }
 
@@ -224,15 +226,6 @@ const HowItWorks = (props) => {
   );
 };
 
-HowItWorks.defaultProps = {
-  heading: "How it works ?",
-  heading1: "Mint",
-  heading2: "Burn",
-  heading3: "Shipping",
-  image_src: "/assets/1.svg",
-  image_src1: "/assets/2.svg",
-  image_src2: "/assets/3.svg",
-};
 
 
 export default HowItWorks;

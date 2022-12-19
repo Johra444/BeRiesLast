@@ -48,6 +48,8 @@ const Community = () => {
             BeRies ✨<br/>
             community
           </div>
+          <div className={styles.paragrah3}>Send us your best photos on Instagram !</div>
+
           <a href="https://www.instagram.com/beries.eth/" target="_blank" >
             <div className={styles.divBlock15}>
               <img
@@ -57,6 +59,7 @@ const Community = () => {
               <div className={styles.paragrah2}>@beries.eth</div>
             </div>
           </a>
+
         </div>
       </section>
     </>
