@@ -20,7 +20,7 @@ const MeetOurTeam = () => {
         
         <div className={styles.team_member}>
           <img
-            src= "./assets/team/Onze.png"
+            src= "./assets/team/johra.png"
             className={styles.image}
           />
           <div className={styles.content}>
