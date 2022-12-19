@@ -26,14 +26,13 @@ const Home = (props) => {
 
   return (
     <>
+      <Preloader></Preloader>
       <Navbar></Navbar>
-
       <div className="home-container">
         <Head>
           <title>BeRies</title>
           <meta property="og:title" content="BeRies" />
         </Head>
-        <Preloader></Preloader>
 
         <main id="slider" className="home-slider">
           <div

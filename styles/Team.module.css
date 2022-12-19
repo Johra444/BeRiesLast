@@ -1,0 +1,82 @@
+.container {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    align-items: flex-start;
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-left: 140px;
+    padding-right: 140px;
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+    background-color: #0000ff;
+    color: white;
+    justify-content: space-between;
+
+    
+  }
+
+.role {
+    font-size: 16px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+  .image {
+    width: 60px;
+    object-fit: cover;
+  }
+  .content {
+    flex: 0 0 auto;
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .team_member {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+  }
+  .row1 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  .row2 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  @media(max-width: 991px) {
+    .container {
+      padding-left: var(--dl-space-space-threeunits);
+      padding-right: var(--dl-space-space-threeunits);
+
+      
+    }
+  }
+
+  @media(max-width: 767px) {
+    .container {
+      overflow: auto;
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+
+    }
+  }
+  
