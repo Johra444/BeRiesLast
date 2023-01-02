@@ -83,11 +83,11 @@ const HowItWorks = () => {
             position: relative;
             max-width: 100%;
             align-items: center;
-            padding-top: var(--dl-space-space-threeunits);
+            padding-top: var(--dl-space-space-twounits);
             padding-left: 140px;
             padding-right: 140px;
             flex-direction: column;
-            padding-bottom: var(--dl-space-space-threeunits);
+            padding-bottom: var(--dl-space-space-twounits);
           }
           .how-it-works-steps-container {
             flex: 0 0 auto;
@@ -211,10 +211,10 @@ const HowItWorks = () => {
           }
           @media (max-width: 479px) {
             .how-it-works-how-it-works {
-              padding-top: var(--dl-space-space-unit);
+              padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-twounits);
             }
             .how-it-works-steps-container {
               padding-left: 0px;

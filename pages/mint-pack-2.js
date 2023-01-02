@@ -226,7 +226,7 @@ const MintPack2 = (props) => {
             width: 100%;
             height: auto;
             align-self: center;
-            object-fit: cover;
+            object-fit: contain;
           }
           .mint-pack2-container3 {
             gap: 10px;
@@ -293,7 +293,7 @@ const MintPack2 = (props) => {
           .mint-pack2-image1 {
             width: 100%;
             align-self: center;
-            object-fit: cover;
+            object-fit: contain;
             margin-bottom: 20px;
           }
           .mint-pack2-text3 {
@@ -311,7 +311,7 @@ const MintPack2 = (props) => {
           .mint-pack2-image2 {
             width: 100%;
             align-self: center;
-            object-fit: cover;
+            object-fit: contain;
             margin-bottom: 20px;
           }
           .mint-pack2-text4 {
@@ -329,7 +329,7 @@ const MintPack2 = (props) => {
           .mint-pack2-image3 {
             width: 100%;
             align-self: center;
-            object-fit: cover;
+            object-fit: contain;
             margin-bottom: 20px;
             padding: 30px;
 

@@ -5,11 +5,11 @@
     overflow: auto;
     position: relative;
     justify-content: space-between;
-    padding-top: var(--dl-space-space-threeunits);
+    padding-top: var(--dl-space-space-twounits);
     padding-left: 140px;
     padding-right: 140px;
     flex-direction: column;
-    padding-bottom: var(--dl-space-space-threeunits);
+    padding-bottom: var(--dl-space-space-twounits);
     background-color: #0000ff;
     color: white;
     justify-content: space-between;
