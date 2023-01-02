@@ -20,7 +20,7 @@ const HowItWorks = () => {
               <span id="black" className="text">
                 <span>
                 Choose the pack of clothes you want, then mint the NFT corresponding to the pack. 
-                You can burn them to order your clothes or you can keep them to burn later (tomorrow or in a few years, if you believe in us.) 
+                You can burn them to order your clothes or you can keep them to burn later 
                 </span>
                 <br></br>
               </span>
@@ -72,6 +72,7 @@ const HowItWorks = () => {
       <style jsx>
         {`.text{
           line-height: 1.25;
+          text-align: justify;
         }
         .titre {
           margin-bottom: 5px;
