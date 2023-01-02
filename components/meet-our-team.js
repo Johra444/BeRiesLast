@@ -40,29 +40,10 @@ const MeetOurTeam = () => {
           </div>
         </div>
 
-        <div className={styles.team_member}>
-          <img
-            src= "./assets/team/1tbk1.png"
-            className={styles.image}
-          />
-          <div className={styles.content}>
-            <span className={styles.name}>@1tbk1</span>
-            <span className={styles.role}>Chief Editor</span>
-          </div>
-        </div>
+
 
       </div>
       <div className={styles.row2}>
-      <div className={styles.team_member}>
-          <img
-            src= "./assets/team/SpadeFx.png"
-            className={styles.image}
-          />
-          <div className={styles.content}>
-            <span className={styles.name}>@SpadeFX</span>
-            <span className={styles.role}>BeRies Builder</span>
-          </div>
-        </div>
         
         <div className={styles.team_member}>
           <img
@@ -87,7 +68,14 @@ const MeetOurTeam = () => {
         </div>
 
         <div className={styles.team_member}>
-
+          <img
+            src= "./assets/team/1tbk1.png"
+            className={styles.image}
+          />
+          <div className={styles.content}>
+            <span className={styles.name}>@1tbk1</span>
+            <span className={styles.role}>Chief Editor</span>
+          </div>
         </div>
         
       </div>

@@ -4,21 +4,23 @@
     display: flex;
     overflow: auto;
     position: relative;
-    align-items: flex-start;
-    padding-top: var(--dl-space-space-oneandhalfunits);
+    justify-content: space-between;
+    padding-top: var(--dl-space-space-threeunits);
     padding-left: 140px;
     padding-right: 140px;
     flex-direction: column;
-    padding-bottom: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-threeunits);
     background-color: #0000ff;
     color: white;
     justify-content: space-between;
+    gap: 5px
 
     
   }
 
 .role {
     font-size: 16px;
+    padding-left: 21px;
 }
 
 .name {
@@ -46,10 +48,9 @@
   }
   .row1 {
     flex: 0 0 auto;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
     padding-bottom: 20px;
   }
@@ -58,7 +59,7 @@
     width: 100%;
     height: auto;
     display: flex;
-    align-items: flex-start;
+
 
   }
 

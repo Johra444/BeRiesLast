@@ -131,31 +131,31 @@ const MintPack4 = (props) => {
           id="item-of-this-pack"
           className="mint-pack4-item-of-this-pack"
         >
-          <h2 id="white" className="h2">Item of this pack</h2>
+          <h2 className="packContains">Pack 4 Contains :</h2>
           <div className="mint-pack4-container4">
             <div className="mint-pack4-container5">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies Pack 4 Hoodie"
+                src="./assets/collection/pack 4/hoodie pack 4.png"
                 className="mint-pack4-image1"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Hoodie</span>
             </div>
             <div className="mint-pack4-container6">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies pack 4 Tee"
+                src="./assets/collection/pack 4/tee pack 4.png"
                 className="mint-pack4-image2"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Tee</span>
             </div>
             <div className="mint-pack4-container7">
               <img
                 alt="image"
-                src="/assets/tee burn-600w.png"
+                src="./assets/collection/pack 4/cap pack 4.png"
                 className="mint-pack4-image3"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Cap</span>
             </div>
           </div>
         </section>
@@ -177,6 +177,18 @@ const MintPack4 = (props) => {
 
       <style jsx>
         {`
+        .packContains{
+          background: white;
+          background-color: white; 
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 20px;
+          padding-right: 100px;
+          border-bottom-right-radius: 30px;
+          font-weight: 500;
+          color: #0000ff;
+          
+        }
           .disabled{
             cursor: not-allowed;
           }
@@ -298,9 +310,9 @@ const MintPack4 = (props) => {
             flex-direction: column;
           }
           .mint-pack4-image2 {
-            width: 100%;
+            width: 140%;
+            padding: 30px;
             align-self: center;
-            object-fit: cover;
             margin-bottom: 20px;
           }
           .mint-pack4-text4 {
@@ -320,6 +332,8 @@ const MintPack4 = (props) => {
             align-self: center;
             object-fit: cover;
             margin-bottom: 20px;
+            padding: 30px;
+
           }
           .mint-pack4-text5 {
             color: rgb(255, 255, 255);
@@ -397,8 +411,10 @@ const MintPack4 = (props) => {
               height: auto;
             }
             .mint-pack4-image2 {
-              width: 70%;
+              width: 80%;
               height: auto;
+              padding: 0px;
+
             }
             .mint-pack4-text4 {
               font-size: 30px;
@@ -464,7 +480,9 @@ const MintPack4 = (props) => {
               height: auto;
             }
             .mint-pack4-image2 {
-              width: 70%;
+              width: 100%;
+              padding: 0px;
+
             }
             .mint-pack4-container7 {
               width: auto;
@@ -504,6 +522,8 @@ const MintPack4 = (props) => {
             }
             .mint-pack4-image2 {
               width: 100%;
+              padding: 0px;
+
             }
             .mint-pack4-image3 {
               width: 100%;

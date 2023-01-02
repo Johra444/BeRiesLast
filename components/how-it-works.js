@@ -16,7 +16,7 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3>Mint</h3>
+              <h3 className="titre">Mint</h3>
               <span id="black" className="text">
                 <span>
                 Choose the pack of clothes you want, then mint the NFT corresponding to the pack. 
@@ -36,7 +36,7 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3>Burn</h3>
+              <h3 className="titre">Burn</h3>
               <span id="black" className="text">
                 <span>
                 In order for us to send you your clothes, you need to burn your NFT (as proof of order) to be able to fill in the form for shipping information. 
@@ -56,7 +56,7 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3>Shipping</h3>
+              <h3 className="titre">Shipping</h3>
               <span id="black" className="text">
                 <span>
                 Once the form is filled in, the team will prepare and send your order with love. Some little surprises will be included in the packages.
@@ -70,7 +70,12 @@ const HowItWorks = () => {
         </div>
       </section>
       <style jsx>
-        {`
+        {`.text{
+          line-height: 1.25;
+        }
+        .titre {
+          margin-bottom: 5px;
+        }
           .how-it-works-how-it-works {
             width: 100%;
             height: auto;
@@ -78,11 +83,11 @@ const HowItWorks = () => {
             position: relative;
             max-width: 100%;
             align-items: center;
-            padding-top: var(--dl-space-space-twounits);
+            padding-top: var(--dl-space-space-threeunits);
             padding-left: 140px;
             padding-right: 140px;
             flex-direction: column;
-            padding-bottom: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-threeunits);
           }
           .how-it-works-steps-container {
             flex: 0 0 auto;

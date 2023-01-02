@@ -130,31 +130,31 @@ const MintPack3 = (props) => {
           id="item-of-this-pack"
           className="mint-pack3-item-of-this-pack"
         >
-          <h2 id="white" className="h2">Item of this pack</h2>
+          <h2 id="white" className="packContains">Pack 3 Contains :</h2>
           <div className="mint-pack3-container4">
             <div className="mint-pack3-container5">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies Pack 3 Hoodie"
+                src="./assets/collection/pack 3/hoodie pack 3.png"
                 className="mint-pack3-image1"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Hoodie</span>
             </div>
             <div className="mint-pack3-container6">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies Pack 3 Tee"
+                src="./assets/collection/pack 3/Group 16.png"
                 className="mint-pack3-image2"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Tee</span>
             </div>
             <div className="mint-pack3-container7">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies Pack 3 Cap"
+                src="./assets/collection/pack 3/cap pack 3.png"
                 className="mint-pack3-image3"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Cap</span>
             </div>
           </div>
         </section>
@@ -177,6 +177,18 @@ const MintPack3 = (props) => {
 
       <style jsx>
         {`
+        .packContains{
+          background: white;
+          background-color: white; 
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 20px;
+          padding-right: 100px;
+          border-bottom-right-radius: 30px;
+          font-weight: 500;
+          color: #0000ff;
+          
+        }
           .disabled{
             cursor: not-allowed;
           }
@@ -320,6 +332,8 @@ const MintPack3 = (props) => {
             align-self: center;
             object-fit: cover;
             margin-bottom: 20px;
+            padding: 30px;
+
           }
           .mint-pack3-text5 {
             color: rgb(255, 255, 255);

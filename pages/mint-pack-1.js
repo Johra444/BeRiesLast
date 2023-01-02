@@ -128,31 +128,31 @@ const MintPack1 = (props) => {
           id="item-of-this-pack"
           className="mint-pack1-item-of-this-pack"
         >
-          <h2 id="white" className="h2">Item of this pack</h2>
+          <h2  className="packContains">Pack 1 Contains :</h2>
           <div className="mint-pack1-container4">
-            <div className="mint-pack1-container5">
+            <div className="mint-pack1-container6">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies Pack 1 hoodie"
+                src="./assets/collection/pack 1/hoodie pack 1.png"
                 className="mint-pack1-image1"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Hoodie</span>
             </div>
             <div className="mint-pack1-container6">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies Pack 1 Tee"
+                src="./assets/collection/pack 1/tee pack 1.png"
                 className="mint-pack1-image2"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Tee</span>
             </div>
-            <div className="mint-pack1-container7">
+            <div className="mint-pack1-container6">
               <img
-                alt="image"
-                src="/assets/tee burn-600w.png"
+                alt="BeRies Pack 1 Cap"
+                src="./assets/collection/pack 1/cap pack 1.png"
                 className="mint-pack1-image3"
               />
-              <span id="white"className="itemTitle">Item title</span>
+              <span id="white"className="itemTitle">1 Cap</span>
             </div>
           </div>
         </section>
@@ -174,6 +174,18 @@ const MintPack1 = (props) => {
 
       <style jsx>
         {`
+        .packContains{
+          background: white;
+          background-color: white; 
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 20px;
+          padding-right: 100px;
+          border-bottom-right-radius: 30px;
+          font-weight: 500;
+          color: #0000ff;
+          
+        }
         .disabled{
           cursor: not-allowed;
         }
@@ -270,14 +282,7 @@ const MintPack1 = (props) => {
             margin-top:20px;
 
           }
-          .mint-pack1-container5 {
-            flex: 1;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-          }
+
           .mint-pack1-image1 {
             width: 100%;
             align-self: center;
@@ -290,8 +295,8 @@ const MintPack1 = (props) => {
           }
           .mint-pack1-container6 {
             flex: 1;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 20%;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -300,25 +305,21 @@ const MintPack1 = (props) => {
             width: 100%;
             align-self: center;
             object-fit: cover;
+            padding: 30px;
             margin-bottom: 20px;
           }
           .mint-pack1-text4 {
             color: rgb(255, 255, 255);
             font-size: 20px;
           }
-          .mint-pack1-container7 {
-            flex: 1;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-          }
+
           .mint-pack1-image3 {
             width: 100%;
             align-self: center;
             object-fit: cover;
             margin-bottom: 20px;
+            padding: 30px;
+
           }
           .mint-pack1-text5 {
             color: rgb(255, 255, 255);
@@ -373,10 +374,7 @@ const MintPack1 = (props) => {
               align-items: center;
               flex-direction: column;
             }
-            .mint-pack1-container5 {
-              width: 100%;
-              height: auto;
-            }
+
             .mint-pack1-image1 {
               width: 70%;
               height: auto;
@@ -395,10 +393,7 @@ const MintPack1 = (props) => {
             .mint-pack1-text4 {
               font-size: 30px;
             }
-            .mint-pack1-container7 {
-              width: 100%;
-              height: auto;
-            }
+
             .mint-pack1-image3 {
               width: 70%;
               height: auto;
@@ -441,10 +436,7 @@ const MintPack1 = (props) => {
               flex-direction: column;
               justify-content: center;
             }
-            .mint-pack1-container5 {
-              width: auto;
-              height: auto;
-            }
+
             .mint-pack1-image1 {
               width: 70%;
             }
@@ -455,10 +447,7 @@ const MintPack1 = (props) => {
             .mint-pack1-image2 {
               width: 70%;
             }
-            .mint-pack1-container7 {
-              width: auto;
-              height: auto;
-            }
+
             .mint-pack1-image3 {
               width: 70%;
             }

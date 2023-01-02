@@ -18,8 +18,7 @@ const KeyOwner = (props) => {
         <section className="key-owner-title-section">
           <h1 id="blue"className="h1">BeRies key owner</h1>
           <p className="paragraph">
-          If you have the BeRies key, this page is for you. <br></br>
-          If you want to get it, try by following this link.
+          If you have the BeRies key, this page is for you. If you want to get it, try by following this link.
           </p>
           <p id="medium" className="paragraph">
           Before the release of Drop 1, there will be the release of a unique NFT, giving access to a large number of advantages that only the holder of this NFT will have. If you really believe in BeRies and its team, that you think the project is solid and that the team is determined to carry it out, then this NFT will clearly allow you to join the team, having access to the backstage of the construction.
@@ -50,7 +49,7 @@ const KeyOwner = (props) => {
               Mint for free
             </button>
             <span className="paragraph2">
-              Have you already mint it ? Claim your clothes here.
+              Have you already mint it ? Claim your clothes <u>here.</u>
             </span>
           </div>
         </main>
