@@ -31,7 +31,7 @@ const KeyOwner = (props) => {
         <main id="claim your nft" className="key-owner-claim-your-nft">
           <div className="key-owner-container1">
             <img
-              src="/assets/key-600w.png"
+              src="./assets/key v2 wbsite.gif"
               className="key-owner-image"
             />
           </div>
@@ -161,7 +161,6 @@ const KeyOwner = (props) => {
             height: auto;
             align-self: center;
             object-fit: cover;
-            transform : rotate(90deg) scaleY(-1);
           }
           .key-owner-container2 {
             gap: 10px;
@@ -219,13 +218,13 @@ const KeyOwner = (props) => {
           }
           @media (max-width: 767px) {
             .key-owner-claim-your-nft {
-              gap: var(--dl-space-space-threeunits);
               align-items: center;
               flex-direction: column;
               justify-content: center;
             }
             .key-owner-container2 {
               width: 100%;
+              padding-top: px;
             }
 
             .item-container{
@@ -245,7 +244,7 @@ const KeyOwner = (props) => {
             margin-bottom:
           }
           .key-owner-container1 {
-            height: 100px;
+            height: auto;
           }
 
 
