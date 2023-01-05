@@ -58,12 +58,12 @@ const KeyOwner = (props) => {
         <h3 className="h3">Exclusive items of this drop</h3>
         <div className="item-container">
           <div className="item">
-          <img className="image" src="./assets/tee burn-600w.png"></img>
-            <span className="itemTitle">BeRies Classic logo *Team only</span>
+          <img className="image" src="./assets/tee rare beries.png"></img>
+            <span className="itemTitle">BeRies x R4R€</span>
           </div>
           <div className="item">
-          <img className="image" src="./assets/tee burn-600w.png"></img>
-            <span className="itemTitle">BeRies Team & Friend’s</span>
+          <img className="image" src=". /assets/tee y2k.png"></img>
+            <span className="itemTitle">BeRies Y2K</span>
           </div>
         </div>
       </div>
@@ -221,6 +221,7 @@ const KeyOwner = (props) => {
               align-items: center;
               flex-direction: column;
               justify-content: center;
+
             }
             .key-owner-container2 {
               width: 100%;
@@ -234,6 +235,8 @@ const KeyOwner = (props) => {
             }
             .key-owner-container1 {
               width: 100%;
+              padding-top: 50px;
+              padding-bottom: 50px;
             }
             .item{
               width: 100%;

@@ -370,7 +370,7 @@ const Burn = () => {
                   <div className={styles.inputContainer}>
                     <h1 className={styles.inputTitle}>Additional info</h1>
                     <input
-                      placeholder="anon@beries.com"
+                      placeholder="Your message"
                       required
                       className={styles.input}
                       value={state.info}
