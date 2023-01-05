@@ -62,7 +62,7 @@ const KeyOwner = (props) => {
             <span className="itemTitle">BeRies x R4R€</span>
           </div>
           <div className="item">
-          <img className="image" src=". /assets/tee y2k.png"></img>
+          <img className="image" src="./assets/tee y2k.png"></img>
             <span className="itemTitle">BeRies Y2K</span>
           </div>
         </div>
