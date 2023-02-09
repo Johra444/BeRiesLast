@@ -84,11 +84,11 @@ const HowItWorks = () => {
             position: relative;
             max-width: 100%;
             align-items: center;
-            padding-top: var(--dl-space-space-twounits);
+            padding-top: var(--dl-space-space-fiveunits);
             padding-left: 140px;
             padding-right: 140px;
             flex-direction: column;
-            padding-bottom: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-fiveunits);
           }
           .how-it-works-steps-container {
             flex: 0 0 auto;
@@ -157,8 +157,8 @@ const HowItWorks = () => {
           }
           @media (max-width: 767px) {
             .how-it-works-how-it-works {
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
+              padding-left: var(--dl-space-space-fiveunits);
+              padding-right: var(--dl-space-space-fiveunits);
             }
             .how-it-works-steps-container {
               align-items: flex-start;
@@ -212,10 +212,10 @@ const HowItWorks = () => {
           }
           @media (max-width: 479px) {
             .how-it-works-how-it-works {
-              padding-top: var(--dl-space-space-twounits);
+              padding-top: var(--dl-space-space-fiveunits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-twounits);
+              padding-bottom: var(--dl-space-space-fiveunits);
             }
             .how-it-works-steps-container {
               padding-left: 0px;
