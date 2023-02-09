@@ -86,7 +86,7 @@ const MintPack2 = (props) => {
 
       <div className="mint-pack2-container">
         <Head>
-          <title>Mint-pack-2 - BeRies</title>
+          <title>Mint Pack 2 - BeRies</title>
           <meta property="og:title" content="Mint-pack-2 - BeRies" />
           <meta property="og:image" />
         </Head>

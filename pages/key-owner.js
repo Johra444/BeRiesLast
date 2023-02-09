@@ -11,7 +11,7 @@ const KeyOwner = (props) => {
 
       <div className="key-owner-container">
         <Head>
-          <title>Key-Owner - BeRies</title>
+          <title>Key Owner - BeRies</title>
           <meta property="og:title" content="Key-Owner - BeRies" />
           <meta />
         </Head>
