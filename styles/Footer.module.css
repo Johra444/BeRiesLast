@@ -87,6 +87,15 @@
 
   }
   
+  @media screen and (min-width: 1900px) {
+    .container{
+      max-width: 1440px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   @media(max-width: 991px) {
     .container {

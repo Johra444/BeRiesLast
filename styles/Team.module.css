@@ -18,6 +18,11 @@
     
   }
 
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
 .role {
     font-size: 16px;
     padding-left: 21px;
@@ -63,6 +68,16 @@
 
   }
 
+  @media screen and (min-width: 1900px) {
+    .wrapper{
+      max-width: 1440px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   @media(max-width: 991px) {
     .container {
       padding-left: var(--dl-space-space-threeunits);
@@ -77,6 +92,14 @@
       overflow: auto;
       padding-left: var(--dl-space-space-unit);
       padding-right: var(--dl-space-space-unit);
+
+    }
+  }
+  @media(max-width: 767px) {
+    .container {
+      overflow: auto;
+      padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits);
 
     }
   }

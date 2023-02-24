@@ -7,7 +7,7 @@ const NavigationLinks = (props) => {
   return (
     <>
       <nav className={`navigation-links-nav ${props.rootClassName} `}>
-      <Link href="/hoodlife"><span className="navigation-links-text">Hoodlife</span></Link>
+      <Link href="/hoodlife"><span className="navigation-links-text"></span></Link>
         <div
           data-thq="thq-dropdown"
           className="navigation-links-thq-dropdown list-item"

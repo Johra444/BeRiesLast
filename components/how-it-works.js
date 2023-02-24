@@ -148,7 +148,15 @@ const HowItWorks = () => {
             object-fit: contain;
           }
 
-
+          @media screen and (min-width: 1900px) {
+            .how-it-works-how-it-works{
+              max-width: 1440px;
+              padding-left: 0px;
+              padding-right: 0px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
           @media (max-width: 991px) {
             .how-it-works-how-it-works {
               padding-left: var(--dl-space-space-threeunits);
@@ -157,8 +165,8 @@ const HowItWorks = () => {
           }
           @media (max-width: 767px) {
             .how-it-works-how-it-works {
-              padding-left: var(--dl-space-space-fiveunits);
-              padding-right: var(--dl-space-space-fiveunits);
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
             }
             .how-it-works-steps-container {
               align-items: flex-start;

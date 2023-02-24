@@ -15,6 +15,7 @@ const KeyOwner = (props) => {
           <meta property="og:title" content="Key-Owner - BeRies" />
           <meta />
         </Head>
+        <div className="section1-container">
         <section className="key-owner-title-section">
           <h1 id="blue"className="h1">BeRies key owner</h1>
           <p className="paragraph">
@@ -27,7 +28,8 @@ const KeyOwner = (props) => {
           For now, there are no plans for such NFTs in the future.
           </p>
         </section>
-
+        </div>
+      <div className="section2-container">
         <main id="claim your nft" className="key-owner-claim-your-nft">
           <div className="key-owner-container1">
             <img
@@ -53,6 +55,7 @@ const KeyOwner = (props) => {
             </span>
           </div>
         </main>
+        </div>
 
       <div className="exclusive-items-container">
         <h3 className="h3">Exclusive items of this drop</h3>
@@ -72,6 +75,16 @@ const KeyOwner = (props) => {
       </div>
       <style jsx>
         {`
+        .section1-container{
+          margin-left: auto;
+        margin-right: auto;
+        }
+        .section2-container{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0000ff;
+        }
+        
         .claim-your-nft{
           overflow: hidden;
 
@@ -138,8 +151,6 @@ const KeyOwner = (props) => {
             flex: 0 0 auto;
             height: auto;
             display: flex;
-            align-self: stretch;
-            align-items: flex-start;
             padding-top: 50px;
             padding-left: 140px;
             padding-right: 140px;
@@ -184,6 +195,28 @@ const KeyOwner = (props) => {
             margin-top: 15px;
             margin-bottom: 15px;
 
+          }
+
+          @media screen and (min-width: 1900px) {
+            .key-owner-title-section{
+              max-width: 1440px;
+              padding-left: 0px;
+              padding-right: 0px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .section2-container{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100vw;
+            }
+        .key-owner-claim-your-nft{
+              max-width: 1440px;
+              padding-left: 0px;
+              padding-right: 0px;
+              margin-left: auto;
+              margin-right: auto;
+            }
           }
           @media (max-width: 1200px) {
             .key-owner-claim-your-nft {

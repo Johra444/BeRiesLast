@@ -17,6 +17,7 @@ const Navbar = () => {
   
   return (
     <>
+    <div className={styles.navbarContainer}>
         <nav className={styles.navbarHeader}>
             <Link href="/">
               <a className={styles.navbarLink}>
@@ -44,6 +45,7 @@ const Navbar = () => {
           </div>
           
         </nav>
+        </div>
         <div className={styles.navbarMobileMenu2} style={{ display }}>
           
               <NavigationLinksMobile></NavigationLinksMobile>

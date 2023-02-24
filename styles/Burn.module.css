@@ -30,6 +30,9 @@
 }
 .div {
   width: 100%;
+  background-color: #0000ff;
+
+
 }
 .blueContainer {
   width: 100%;
@@ -185,7 +188,15 @@
   font-style: normal;
   font-weight: 700;
 }
-
+@media screen and (min-width: 1900px) {
+  .burnContainer1{
+    max-width: 1440px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media (max-width: 1030px) {
   .blueContainer{
     flex-direction: column;

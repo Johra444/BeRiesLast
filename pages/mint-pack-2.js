@@ -338,6 +338,24 @@ const MintPack2 = (props) => {
             color: rgb(255, 255, 255);
             font-size: 20px;
           }
+
+          @media screen and (min-width: 1900px) {
+          .mint-pack2-container1{
+            max-width: 1440px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .mint-pack2-item-of-this-pack{
+            max-width: 1440px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+        }
           @media (max-width: 1200px) {
             .mint-pack2-container1 {
               gap: var(--dl-space-space-threeunits);

@@ -5,6 +5,7 @@ import styles from "../styles/Team.module.css"
 const MeetOurTeam = () => {
   return (
     <div className={styles.container}>
+    <div className={styles.wrapper}>
       <h2 id="white" className="h2">Meet our team</h2>
       <div className={styles.row1}>
         <div className={styles.team_member}>
@@ -78,6 +79,7 @@ const MeetOurTeam = () => {
           </div>
         </div>
         
+      </div>
       </div>
     </div>
   )
