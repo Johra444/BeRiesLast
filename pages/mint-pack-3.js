@@ -101,7 +101,7 @@ const MintPack3 = (props) => {
           <div className="mint-pack3-container3">
             <h2 className="packTitle">Pack 3</h2>
             <span id="white" className="packDesc">
-              1 Tee - 1 Hoodie - 1 Cap
+              1 Tee - 1 Cap
             </span>
             <span id="white"className="packDesc">
               {minted3} / 110 minted
@@ -132,14 +132,7 @@ const MintPack3 = (props) => {
         >
           <h2 id="white" className="packContains">Pack 3 Contains :</h2>
           <div className="mint-pack3-container4">
-            <div className="mint-pack3-container5">
-              <img
-                alt="BeRies Pack 3 Hoodie"
-                src="./assets/collection/pack 3/hoodie pack 3.png"
-                className="mint-pack3-image1"
-              />
-              <span id="white"className="itemTitle">1 Hoodie</span>
-            </div>
+
             <div className="mint-pack3-container6">
               <img
                 alt="BeRies Pack 3 Tee"
@@ -314,6 +307,7 @@ const MintPack3 = (props) => {
             align-self: center;
             object-fit: contain;
             margin-bottom: 20px;
+            max-height: 431px;
           }
           .mint-pack3-text4 {
             color: rgb(255, 255, 255);
@@ -333,6 +327,7 @@ const MintPack3 = (props) => {
             object-fit: contain;
             margin-bottom: 20px;
             padding: 30px;
+            max-height: 431px;
 
           }
           .mint-pack3-text5 {
@@ -427,9 +422,9 @@ const MintPack3 = (props) => {
               width: 100%;
               height: auto;
             }
-            .mint-pack3-image2 {
+            .mint-pack3-image1 {
               width: 70%;
-              height: auto;
+              max-height: 431px;
             }
             .mint-pack3-text4 {
               font-size: 30px;
